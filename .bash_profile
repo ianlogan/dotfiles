@@ -19,5 +19,11 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 
+# ruby GC settings
+export RUBY_HEAP_MIN_SLOTS=600000
+export RUBY_GC_MALLOC_LIMIT=59000000
+export RUBY_HEAP_FREE_MIN=100000
+
+
 # loads rvm into a shell session
 [[ -s "/Users/ianlogan/.rvm/scripts/rvm" ]] && source "/Users/ianlogan/.rvm/scripts/rvm"
