@@ -5,7 +5,7 @@ fi
 
 # path extensions
 export PATH=$PATH:/usr/local/mysql/bin
-
+export PATH=$PATH:/Users/ianlogan/software/elastic-mapreduce-ruby
 
 # custom bash prompt
 export PS1="\[\033[00m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;32m\] \`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[01;32m\]$\[\033[00m\] "
