@@ -1,0 +1,31 @@
+nethack on
+vbell on
+defutf8 on
+
+defscrollback 16384
+
+caption always "%{+bs .K} %=%{-s} %-w%{+u}%n %t%{-}%+w %{+s} %="
+#               |C      | |L    | |I                 | |R     |
+#
+#  |C|  makes things bold and sets the background to gray
+#
+#  |I|  lists all windows, with the current window underlined
+#         %-w     all windows up to the current window
+#         %{+u}   start underlining
+#         %n      number of the current window
+#         %t      command in the current window 
+#         %{-}    revert to previous style
+#         %+w     all windows following the current window
+#
+#  |L|  blocks in the left margin
+#       note the initial space, to make sure the colors take
+#       with |R| serves to center the text
+#         %=      fill
+#         %{-s}   turn off reverse video
+#
+#  |R|  blocks in the right margin
+#       note the space, to make sure the style change takes
+#       with |L| serves to center the text
+#         %{+s}   turn standout style back on
+#         %=      fill
+#
