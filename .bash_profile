@@ -3,9 +3,13 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+# RDS tools
+export AWS_RDS_HOME=/Users/ianlogan/software/RDSCli-1.8.002
+
 # path extensions
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/Users/ianlogan/software/elastic-mapreduce-ruby
+export PATH=$PATH:AWS_RDS_HOME
 
 # java settings
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
