@@ -32,6 +32,8 @@ export RUBY_GC_MALLOC_LIMIT=59000000
 export RUBY_HEAP_FREE_MIN=100000
 export RUBYOPT=-Ku
 
+export LOCAL_MYSQL_USERNAME="root"
+export LOCAL_MYSQL_PASSWORD=""
 
 # loads rvm into a shell session
 [[ -s "/Users/ianlogan/.rvm/scripts/rvm" ]] && source "/Users/ianlogan/.rvm/scripts/rvm"

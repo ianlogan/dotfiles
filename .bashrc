@@ -11,6 +11,7 @@ alias start_dyson="sh ~/software/dyson-local.arx"
 alias start_nginx='/usr/local/nginx/sbin/nginx'
 alias stop_nginx='kill `cat /usr/local/nginx/logs/nginx.pid`'
 alias start_zeus='RAILS_ENV=test zeus start'
+alias start_pricing='sh ~/software/pricing-local.arx'
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
