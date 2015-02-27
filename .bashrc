@@ -8,6 +8,8 @@ alias memcache='memcached -d -m 32 -p 11211 && echo "32mb memcached running..."'
 alias redis='redis-server config/redis/development.conf && echo "redis daemons running..."'
 alias lantern='cd ~/dev/ganesh && memcache && redis && bundle && passenger start -p 4000'
 
+alias rekey='ssh-add -e /usr/lib/opensc-pkcs11.so; ssh-add -s /usr/lib/opensc-pkcs11.so -t 3600'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 . /usr/local/etc/bash_completion.d/git-completion.bash
